@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:molsm/jira-report-web-ui.git",
   "author": "Maris Mols <maris9229@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "laravel-mix": "^1.7.2"
+  }
 }
