@@ -10,11 +10,12 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
+console.log(mix.inProduction());
 mix.webpackConfig({
     node: {
         fs: "empty"
     }
 })
     .js('resources/assets/js/app.js', 'public/js')
-    .sass('resources/assets/sass/app.scss', 'public/css');
+    .sass('resources/assets/sass/app.scss', 'public/css')
+    .sourceMaps();
