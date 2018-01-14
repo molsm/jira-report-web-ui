@@ -47,7 +47,6 @@
 </template>
 <script>
     // import JiraApi from 'jira-client';
-    import bus from '../bus.js'
 
     export default {
         data: function () {
@@ -64,7 +63,6 @@
             getReport: function (event) {
                 event.preventDefault();
                 console.log(this.jiraHost);
-                bus.$emit('id-selected', 1)
                 // var jira = new JiraApi({
                 //     protocol: 'https',
                 //     host: 'xxx',

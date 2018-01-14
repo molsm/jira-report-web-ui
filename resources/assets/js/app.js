@@ -1,9 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Vuex from 'vuex'
+import App from './components/App'
+import Store from './store'
 
 Vue.use(VueRouter);
+Vue.use(Vuex);
 
-import App from "./components/App"
+const store = new Vuex.Store(Store);
 
 const router = new VueRouter({
     mode: 'history',
@@ -11,8 +15,9 @@ const router = new VueRouter({
 });
 
 const app = new Vue({
-    el: '#app',
-    components: { App },
     router,
-});
+    store,
+    components: { App }
+
+}).$mount('#app');
 

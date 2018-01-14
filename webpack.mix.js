@@ -18,4 +18,5 @@ mix.webpackConfig({
 })
     .js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css')
+    .browserSync('http://localhost:63342/jira-report-web-ui/public/index.html')
     .sourceMaps();
