@@ -1,0 +1,9 @@
+{
+  "name": "jira-report-web-ui",
+  "version": "1.0.0",
+  "description": "Jira reporter web UI",
+  "main": "index.js",
+  "repository": "git@github.com:molsm/jira-report-web-ui.git",
+  "author": "Maris Mols <maris9229@gmail.com>",
+  "license": "MIT"
+}
